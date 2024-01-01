@@ -36,14 +36,14 @@ body {
   display: flex;
 }
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 input,button{
-  outline:none;
+  outline: none;
 }
 button {
   background: none;
@@ -130,19 +130,19 @@ li >    input[type="text"] {
 /* Completed */
 #completed label {
   text-decoration: line-through
-    color: #888;
+  color: #888;
 }
 
 /* Edit Task */
 li input[type="text"] {
-  display:none
+  display: none
 }
 
 .control-elements__edit-mode input[type="text"] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .control-elements__edit-mode label {
-  display:none;
+  display: none;
 }
