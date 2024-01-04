@@ -6,46 +6,52 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="about-matrix">
+    <section class="about-matrix">
+      <h2 class="about-matrix__title">About Eisenhower matrix</h2>
       <img class="about-matrix__img" src="./eisenhower-matrix.jpg" alt="Матрица Эйзенхауэра">
       <a class="about-matrix__inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="control-elements">
-      <p class="control-elements__add"id="add-elements">
-        <label for="new-task">Add Item</label>
-        <div class="control-elements__task-wrapper">
-          <input id="new-task"class="control-elements__task" type="text">
-          <button>Add</button>
+    </section>
+    <section class="matrix-control">
+      <h2 class="matrix-control__title"></h2>
+      <section class="matrix-add" id="add-elements">
+        <h3 class="matrix-add__title">Add Item</h3>
+        <div class="matrix-add__input-container">
+          <input class="matrix-add__input" id="new-task" type="text">
+          <button class="matrix-add__btn">Add</button>
         </div>
-      </p>
-      <h3>Todo</h3>
-      <ul class="controls-elements__incompleted" id="incompleted">
-        <li>
-          <input type="checkbox">
-          <label class="control-elements__task">Pay Bills</label>
-          <input type="text" class="control-elements__task">
-          <button class="control-elements__edit">Edit</button>
-          <button class="control-elements__delete"><img class="control-elements__delete-img" src="./remove.svg"></button>
-        </li>
-        <li class="control-elements__edit-mode">
-          <input type="checkbox">
-          <label class="control-elements__task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="control-elements__task">
-          <button class="control-elements__edit">Save</button>
-          <button class="control-elements__delete"><img class="control-elements__delete-img" src="./remove.svg"></button>
-        </li>
-      </ul>
-      <h3>Completed</h3>
-      <ul class="controls-elements__completed" id="completed">
-        <li>
-          <input type="checkbox" checked>
-          <label class="control-elements__task">See the Doctor</label>
-          <input type="text" class="control-elements__task">
-          <button class="control-elements__edit">Edit</button>
-          <button class="control-elements__delete"><img class="control-elements__delete-img" src="./remove.svg"></button>
-        </li>
-      </ul>
-    </div>
+      </section>
+      <section class="matrix-todo">
+        <h3 class="matrix-todo__title">Todo</h3>
+        <ul class="matrix-todo__incompl-list" id="incompleted">
+          <li class="matrix-item">
+            <input class="matrix-item__check-input" type="checkbox">
+            <label class="matrix-item__label">Pay Bills</label>
+            <input class="matrix-item__input" type="text" >
+            <button class="matrix-item__edit-btn">Edit</button>
+            <button class="matrix-item__delete-btn"> <img class="matrix-item__delete-img" src="./remove.svg"></button>
+          </li>
+          <li class="matrix-item matrix-item--edit">
+            <input class="matrix-item__check-input" type="checkbox">
+            <label class="matrix-item__label matrix-item__label--edit">Go Shopping</label>
+            <input class="matrix-item__input matrix-item__input--edit" type="text" value="Go Shopping" >
+            <button class="matrix-item__edit-btn">Save</button>
+            <button class="matrix-item__delete-btn"> <img class="matrix-item__delete-img" src="./remove.svg"></button>
+          </li>
+        </ul>
+      </section>      
+      <section class="matrix-completed">
+        <h3 class="matrix-completed__title">Completed</h3>
+        <ul class="matrix-completed__list" id="completed">
+          <li class="matrix-item">
+            <input class="matrix-item__check-input" type="checkbox" checked>
+            <label class="matrix-item__label matrix-item__label--strikethrough">See the Doctor</label>
+            <input class="matrix-item__input" type="text">
+            <button class="matrix-item__edit-btn">Edit</button>
+            <button class="matrix-item__delete-btn"><img class="matrix-item__delete-img" src="./remove.svg"></button>
+          </li>
+        </ul>
+      </section>      
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
