@@ -62,8 +62,8 @@ body {
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
@@ -83,7 +83,7 @@ body {
   cursor: pointer;
 }
 .matrix-add__btn:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 /*------------------------------------section matrix-todo------------------------------------------------------------*/
 .matrix-todo__title {
@@ -132,8 +132,8 @@ body {
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
@@ -153,7 +153,7 @@ body {
   cursor: pointer;
 }
 .matrix-item__edit-btn:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 .matrix-item__delete-btn {
   outline: none;
@@ -166,7 +166,7 @@ body {
   cursor: pointer;
 }
 .matrix-item__delete-btn:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 .matrix-item__delete-img {
   height: 2em;
